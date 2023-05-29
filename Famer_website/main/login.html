@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+</head>
+<body>
+    UserName:<input type="text" id="usr"> 
+    PASSWORD:<input type="password" id="pass">
+    <input type="submit" onclick="myfunc()">
+</body>
+</html>
+
+
+<script>
+
+    function myfunc(){
+        var username=document.getElementById('usr').value;
+        var pass=document.getElementById('pass').value;
+       console.log(username)
+       console.log(pass)
+        if (username==="root" && pass==="pass"){
+            window.open('index.html', '_blank');
+    }   else{
+
+        alert("galat hain bc");
+    }
+
+
+    }
+
+</script>
